@@ -7,8 +7,7 @@ function addX(x) {
         lastElem = answerStr.value.slice(-1);
 
     if (lastElem !== ')') {
-        if ((lastElem === "." && x === ".") || (lastElem === '/' && x === 0)){
-        } else {
+        if (!(lastElem === "." && x === ".") & !(lastElem === '/' && x === 0)){
             if (x === ".") {
                 if (flagDot === false) {
                     answerStr.value += x;
@@ -17,7 +16,6 @@ function addX(x) {
             } else {
                 answerStr.value += x;
             }
-
         }
     }
 }
@@ -26,9 +24,8 @@ function addOperation(x) {
     const answerStr = document.getElementById('input4c'),
         lastElem = answerStr.value.slice(-1);
 
-    if ((lastElem === '+' || lastElem === '-'
+    if (!(lastElem === '+' || lastElem === '-'
         || lastElem === '*' || lastElem === '/' || lastElem === '.' || lastElem === '')) {
-    } else {
         answerStr.value += x;
         flagDot = false;
     }
@@ -52,9 +49,8 @@ function addBracket(side='l') {
 function answer() {
     const answerStr = document.getElementById('input4c');
 
-    if (answerStr.value) {
+    if (answerStr.value)
         answerStr.value = eval(answerStr.value);
-    }
 }
 
 function clearAll() {
