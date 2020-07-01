@@ -34,9 +34,6 @@ main::before {
 }
 main .center {
     padding-top: 50px;
-    /*position: relative;*/
-    /*top: 50%;*/
-    /*transform: translateY(-50%);*/
 }
 main .calcWrapper {
     background: rgb(18, 16, 39);
@@ -72,12 +69,11 @@ main .calcWrapper {
     border-radius: 5px;
     font-size: 24px;
     margin-bottom: 3px;
-}
-.calcWrapper button::selection {
-    background: transparent;
-}
-.calcWrapper button::-moz-selection {
-    background: transparent;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .problems {
     margin-top: 15px;
