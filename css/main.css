@@ -70,10 +70,25 @@ main .calcWrapper {
     margin-bottom: 3px;
 }
 .problems {
-    display: none;
     margin-top: 15px;
     font-size: 20px;
 }
+.modal-body__title {
+    margin-bottom: 20px;
+}
+.modal-body__rule {
+    margin-bottom: 10px;
+}
+.btn-primary-1 {
+    background: rgb(18, 16, 39);
+    color: #fff;
+}
+.btn-secondary-1 {
+    background: #fff;
+    color: rgb(18, 16, 39);
+    border: 1px solid rgb(18, 16, 39);
+}
+
 .info-block h2 {
     font-size: 48px;
     font-weight: 900;
@@ -82,6 +97,12 @@ main .calcWrapper {
 .info-block p {
     font-weight: 500;
     text-shadow: rgb(22, 18, 46) 1px 1px 1px;
+}
+.thanks {
+    text-shadow: rgb(22, 18, 46) 2px 2px 1px;
+}
+.thanks a {
+    color: #fff;
 }
 @media (min-width: 300px) and (max-width: 420px){
     .col-3 {
