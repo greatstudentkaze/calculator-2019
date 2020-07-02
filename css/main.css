@@ -74,6 +74,9 @@ main .calcWrapper {
     -webkit-user-select: none;
     user-select: none;
 }
+.calcWrapper button:hover {
+    background: #f6f6ff;
+}
 .problems {
     margin-top: 15px;
     font-size: 20px;
