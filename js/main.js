@@ -73,8 +73,10 @@ function addBracket(side='l') {
 function answer() {
     const answerStr = document.getElementById('input4c');
 
-    if (answerStr.value)
-        answerStr.value = eval(answerStr.value);
+    if (answerStr.value) {
+        answerStr.value = +eval(answerStr.value).toFixed(8);
+    }
+
 }
 
 function clearAll() {
